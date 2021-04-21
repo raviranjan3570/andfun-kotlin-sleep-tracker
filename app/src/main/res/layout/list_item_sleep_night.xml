@@ -28,28 +28,13 @@
             app:sleepImage="@{sleep}"/>
 
         <TextView
-            android:id="@+id/sleep_length"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/quality_image"
-            app:layout_constraintTop_toTopOf="@+id/quality_image"
-            tools:text="one day"
-            app:sleepDurationFormatted="@{sleep}"/>
-
-        <TextView
             android:id="@+id/quality_string"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/quality_image"
-            app:layout_constraintTop_toBottomOf="@+id/sleep_length"
+            app:layout_constraintEnd_toEndOf="@+id/quality_image"
+            app:layout_constraintStart_toStartOf="@+id/quality_image"
+            app:layout_constraintTop_toBottomOf="@+id/quality_image"
             tools:text="excellent"
             app:sleepQualityString="@{sleep}"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
